@@ -1,0 +1,26 @@
+[project]
+name = "flask-app"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Manish",email = "krmanish2101@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10.9"
+dependencies = [
+    "flask (==2.2.2)",
+    "sqlalchemy (==2.0.35)",
+    "simplejson (==3.18.0)",
+    "pydantic (>=2.10.6,<3.0.0)",
+    "flask-openapi3 (>=4.0.3,<5.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.4"
+pytest-mock = "^3.14.0"
+
